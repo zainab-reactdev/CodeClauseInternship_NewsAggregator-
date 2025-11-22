@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+/* small global tweaks to match UI guidelines */
+:root{
+  --bg-gradient: linear-gradient(135deg,#f8fafc 0%, #eef2ff 100%);
+}
+
+/* subtle page background */
+body {
+  background: var(--bg-gradient);
+}
+
+/* card shadow + hover */
+.card-shadow {
+  @apply shadow-md hover:shadow-lg transition-shadow duration-200;
+}
+
+/* sticky navbar spacing */
+.sticky-navbar {
+  @apply sticky top-0 z-40 backdrop-blur bg-white/70;
+}
+
+/* skeleton shimmer (simple) */
+.skeleton {
+  background: linear-gradient(90deg, #e2e8f0 25%, #f8fafc 50%, #e2e8f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
