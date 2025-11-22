@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+VITE_NEWS_API_KEY=c3732bef72434027b21f0f8f8f783fcd
